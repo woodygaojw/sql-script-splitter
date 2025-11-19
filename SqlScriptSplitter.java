@@ -12,6 +12,7 @@ public class SqlScriptSplitter {
     private static final char SINGLE_QUOTE = '\'';
     private static final char DOUBLE_QUOTE = '"';
     private static final char BACK_TICK = '`';
+
     private final char[] buf;
     private final int length;
     private final StringBuilder sqlBuf = new StringBuilder();
