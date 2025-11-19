@@ -7,7 +7,7 @@ import java.util.List;
  * 这里解决的问题是，不能只简单地按分号拆分，需要识别注释和sqL字符串值里的分号不做拆分处理。<br>
  * 注释的处理：过滤单行注释（'--'、'#'、'//'）和注释块，保留hint
  */
-class SqlScriptSplitter {
+public class SqlScriptSplitter {
 
     private static final char SINGLE_QUOTE = '\'';
     private static final char DOUBLE_QUOTE = '"';
@@ -18,7 +18,7 @@ class SqlScriptSplitter {
     private final List<String> sqlList = new ArrayList<>();
     private int pos = 0;
 
-    SqlScriptSplitter(String script) {
+    public SqlScriptSplitter(String script) {
         if (script == null || script.isEmpty()) {
             buf = null;
             length = 0;
