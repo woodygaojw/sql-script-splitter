@@ -116,7 +116,7 @@ public class SqlScriptSplitter {
             return;
         }
         String sql = sqlBuf.toString().trim();
-        System.out.println("###" + sql);
+//        System.out.println("###" + sql);
         if (!sql.isEmpty()) {
             sqlList.add(sql);
         }
